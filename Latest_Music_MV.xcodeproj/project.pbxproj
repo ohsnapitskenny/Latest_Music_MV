@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B90D64DB1EB4FAFE00ADBDEE /* ArtistDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90D64DA1EB4FAFE00ADBDEE /* ArtistDetailController.swift */; };
 		B99A26BB1EB38775001CBB62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99A26BA1EB38775001CBB62 /* AppDelegate.swift */; };
 		B99A26BD1EB38776001CBB62 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99A26BC1EB38775001CBB62 /* FirstViewController.swift */; };
 		B99A26BF1EB38776001CBB62 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99A26BE1EB38776001CBB62 /* SecondViewController.swift */; };
 		B99A26C21EB38776001CBB62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B99A26C01EB38776001CBB62 /* Main.storyboard */; };
 		B99A26C41EB38776001CBB62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B99A26C31EB38776001CBB62 /* Assets.xcassets */; };
 		B99A26C71EB38776001CBB62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B99A26C51EB38776001CBB62 /* LaunchScreen.storyboard */; };
+		B99A26CF1EB38785001CBB62 /* ArtistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99A26CE1EB38785001CBB62 /* ArtistTableViewController.swift */; };
+		B99A26D21EB3884B001CBB62 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99A26D11EB3884B001CBB62 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B90D64DA1EB4FAFE00ADBDEE /* ArtistDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistDetailController.swift; sourceTree = "<group>"; };
 		B99A26B71EB38775001CBB62 /* Latest_Music_MV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Latest_Music_MV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B99A26BA1EB38775001CBB62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B99A26BC1EB38775001CBB62 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		B99A26C31EB38776001CBB62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B99A26C61EB38776001CBB62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B99A26C81EB38776001CBB62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B99A26CE1EB38785001CBB62 /* ArtistTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistTableViewController.swift; sourceTree = "<group>"; };
+		B99A26D11EB3884B001CBB62 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B99A26D21EB3884B001CBB62 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,7 @@
 			children = (
 				B99A26B91EB38775001CBB62 /* Latest_Music_MV */,
 				B99A26B81EB38775001CBB62 /* Products */,
+				B99A26D01EB3884B001CBB62 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +67,22 @@
 				B99A26BA1EB38775001CBB62 /* AppDelegate.swift */,
 				B99A26BC1EB38775001CBB62 /* FirstViewController.swift */,
 				B99A26BE1EB38776001CBB62 /* SecondViewController.swift */,
+				B99A26CE1EB38785001CBB62 /* ArtistTableViewController.swift */,
+				B90D64DA1EB4FAFE00ADBDEE /* ArtistDetailController.swift */,
 				B99A26C01EB38776001CBB62 /* Main.storyboard */,
 				B99A26C31EB38776001CBB62 /* Assets.xcassets */,
 				B99A26C51EB38776001CBB62 /* LaunchScreen.storyboard */,
 				B99A26C81EB38776001CBB62 /* Info.plist */,
 			);
 			path = Latest_Music_MV;
+			sourceTree = "<group>";
+		};
+		B99A26D01EB3884B001CBB62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B99A26D11EB3884B001CBB62 /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +158,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B99A26CF1EB38785001CBB62 /* ArtistTableViewController.swift in Sources */,
 				B99A26BF1EB38776001CBB62 /* SecondViewController.swift in Sources */,
+				B90D64DB1EB4FAFE00ADBDEE /* ArtistDetailController.swift in Sources */,
 				B99A26BB1EB38775001CBB62 /* AppDelegate.swift in Sources */,
 				B99A26BD1EB38776001CBB62 /* FirstViewController.swift in Sources */,
 			);
@@ -306,6 +326,7 @@
 				B99A26CD1EB38776001CBB62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
